@@ -3,6 +3,6 @@
 
 Learn about all these great technologies:
 
-[Tomcat](./tomcat/index.md)
-[Cloud](./cloud/index.md)
-[Java](./java/index.md)
+[Tomcat](./tutorials/tomcat/index.md)
+[Cloud](./tutorials/cloud/index.md)
+[Java](./tutorials/java/index.md)
