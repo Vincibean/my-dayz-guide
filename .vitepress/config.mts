@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "My DayZ Manual",
   description: "My DayZ Manual",
+  base: "/my-dayz-manual/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
