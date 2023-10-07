@@ -1,12 +1,14 @@
 import { defineConfig } from 'vitepress'
 
+const base = "/my-dayz-manual/"
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "My DayZ Manual",
   description: "My notes on how to set up, maintain and mod a DayZ server",
-  base: "/my-dayz-manual/",
+  base,
   head: [
-    ['link', { rel: "icon", type: "image/ico", href: "/my-dayz-manual/favicon.ico"}],
+    ['link', { rel: "icon", type: "image/ico", href: base + "favicon.ico"}],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
