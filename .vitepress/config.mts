@@ -5,6 +5,9 @@ export default defineConfig({
   title: "My DayZ Manual",
   description: "My notes on how to set up, maintain and mod a DayZ server",
   base: "/my-dayz-manual/",
+  head: [
+    ['link', { rel: "icon", type: "image/ico", href: "/my-dayz-manual/favicon.ico"}],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
