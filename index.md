@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "My DayZ Manual"
-  text: "My DayZ Manual"
-  tagline: My great project tagline
+  name: "DayZ Manual"
+  text: "Notes for DayZ Server owners"
+  tagline: Learn how to set up, maintain and mod a DayZ server
   actions:
     - theme: brand
       text: Markdown Examples

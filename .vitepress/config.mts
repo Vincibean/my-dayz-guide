@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "My DayZ Manual",
-  description: "My DayZ Manual",
+  description: "My notes on how to set up, maintain and mod a DayZ server",
   base: "/my-dayz-manual/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
