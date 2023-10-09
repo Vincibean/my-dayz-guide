@@ -33,7 +33,9 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Vincibean/my-dayz-manual' }
+      { icon: 'github', link: 'https://github.com/Vincibean/my-dayz-manual' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@Ledoryan' },
+      { icon: 'twitter', link: 'https://twitter.com/sepensai' },
     ]
   }
 })
