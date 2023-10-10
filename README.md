@@ -1,3 +1,3 @@
-# My DayZ Manual
+# My DayZ Guide
 
-My DayZ Manual
+My DayZ Guide

@@ -3,13 +3,16 @@
 layout: home
 
 hero:
-  name: "DayZ Manual"
+  name: "DayZ Guide"
   text: "Notes for DayZ Server owners"
   tagline: Learn how to set up, maintain and mod a DayZ server
   actions:
     - theme: brand
       text: Markdown Examples
       link: /markdown-examples
+    - theme: brand
+      text: DayZ Guide
+      link: /guide/install-local-dayz-server
     - theme: alt
       text: API Examples
       link: /api-examples
