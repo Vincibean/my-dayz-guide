@@ -13,8 +13,11 @@ The first step is downloading the server files. This can easily be done through 
 
 1. Fire up Steam
 2. Go to your `Library`
-3. At the top where it says `Games` change that to `Tools`
-4. You'll see `DayZ server` among the results. Select it
+3. At the top where it says `Games` change that to include `Tools`
+
+![Steam Library includes Tools](./steam-library-tools.jpg)
+
+4. You'll see `DayZ Server` among the results. Select it
 5. Click `Install`
 6. You'll notice on your desktop there'll be a shortcut to launch the server
 
