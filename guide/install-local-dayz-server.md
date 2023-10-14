@@ -45,52 +45,20 @@ This is what you would see is if you were looking at the file structure on a rem
 ```batch
 @echo off
 :start
-::Server name (This is just for the bat file)
-set serverName="DayZ Server Name"
 ::Server files location
 set serverLocation="C:\Program Files (x86)\Steam\steamapps\common\DayZServer"
 ::Server Port
 set serverPort=2302
 ::Server config
 set serverConfig=serverDZ.cfg
-::Logical CPU cores to use (Equal or less than available)
-set serverCPU=2
-::Sets title for terminal (DONT edit)
-title %serverName% batch
-::DayZServer location (DONT edit)
-cd "%serverLocation%"
-echo (%time%) %serverName% started.
-::Launch parameters (edit end: -config=|-port=|-profiles=|-doLogs|-adminLog|-netLog|-freezeCheck|-filePatching|-BEpath=|-cpuCount=)
-start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serverPort% -profiles=config -cpuCount=%serverCPU% -dologs -adminlog -netlog -freezecheck
-::Time in seconds before kill server process (14400 = 4 hours)
-timeout 14390
-taskkill /im DayZServer_x64.exe /F
-::Time in seconds to wait before..
-timeout 10
-::Go back to the top and repeat the whole cycle again
-goto start
-```
-
-Here is an updated version:
-
-```batch
-@echo off
-:start
-::Server files location
-set serverLocation="C:\servers\dayzserver"
-::Server Port
-set serverPort=2302
-::Server config
-set serverConfig="C:\servers\dayzserver\serverDZ.cfg"
 ::Server profile
-set serverProfile="C:\servers\dayzserver\PROFILENAME"
+set serverProfiles=profiles
 ::Logical CPU cores to use (Equal or less than available)
 set serverCPU=4
-::DayZServer location (DONT edit)
+:: Go to DayZServer location
 cd "%serverLocation%"
-echo (%time%) started.
-::Launch parameters (edit end: -config=|-port=|-profiles=|-doLogs|-adminLog|-netLog|-freezeCheck|-filePatching|-BEpath=|-cpuCount=)
-start "DayZ Server" /min "DayZServer_x64.exe" -profiles=%serverProfile% -config=%serverConfig% -port=%serverPort% -cpuCount=%serverCPU% -dologs -adminlog -netlog -freezecheck
+::Launch parameters (edit end: -profiles=|-config=|-port=|-cpuCount=|-doLogs|-adminLog|-netLog|-freezeCheck|-filePatching|-BEpath=)
+start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serverPort% -profiles=%serverProfiles% -cpuCount=%serverCPU% -dologs -adminlog -netlog -freezecheck
 ```
 
 ::: tip
@@ -106,7 +74,7 @@ Here is a possible (working!) example:
 /////////////////////
 // Main parameters //
 /////////////////////
-hostname = "DayZ Server Name";	// Server name
+hostname = "My DayZ Server";	// Server name
 password = "";                  // Password to connect to the server
 passwordAdmin = "";             // Password to become a server admin
 
@@ -208,7 +176,7 @@ serverFpsWarning = 15;          // set to define the server fps value under whic
 ```
 
 ::: warning
-If you haven't changed any of the settings so far, then make sure that the config file is save in the same folder as the `start.bat` file.
+If you haven't changed any of the settings so far, then make sure that the config file is saved in the same folder as the `start.bat` file.
 
 Ideally, this should be the following folder:
 
@@ -217,8 +185,7 @@ Ideally, this should be the following folder:
 
 ## Server profile
 When the server starts up it's going to create a folder (whose name depends on what you set as argument to
-the `-profiles` parameter) and within that folder it's going
-to put your log files.
+the `-profiles` parameter) and within that folder it's going to put your log files.
 
 Also, very importantly, this is where you are eventually going to put
 the files that will allow you to be recognized as an admin; in other words, that's where your server
@@ -226,8 +193,11 @@ will look in order to verify your claim to be an admin.
 
 ## Run your Local DayZ Server
 
-Double click on the start button; this will fire up your local DayZ server.
-You will get a little window with some logs.
+Open a new terminal and run the `start.bat` script with:
+```powershell
+.\start.bat
+```
+If everything worked correctly you will get a little window with some logs.
 
 ## Join your Local DayZ Server
 
@@ -236,6 +206,18 @@ You will get a little window with some logs.
 3. Go to `LAN`
 4. Click on `Join`
 5. Congrats! You are now playing on your own local DayZ server!
+
+## Stop your Local Dayz Server
+
+Create a new file called `stop.bat`; it will look like this:
+```batch
+taskkill /f /im DayZServer_x64.exe
+```
+
+Then, just like before, open a new terminal and run the `stop.bat` script with:
+```powershell
+.\stop.bat
+```
 
 ## Local DayZ Server or DayZ Community Offline Mode?
 [DayZ Community Offline Mode](https://github.com/Arkensor/DayZCommunityOfflineMode) is brilliant for quickly getting into the game so you can have a look around, spawn things in and generally explore, but if you want to have a genuine DayZ experience you need to run your
