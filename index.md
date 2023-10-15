@@ -12,7 +12,7 @@ hero:
       link: /markdown-examples
     - theme: brand
       text: DayZ Guide
-      link: /guide/install-local-dayz-server
+      link: /guide/local-dayz-server
     - theme: alt
       text: API Examples
       link: /api-examples

@@ -1,4 +1,4 @@
-# Install a Local DayZ Server
+# Local DayZ Server
 
 Here we will see how to install and set up a DayZ Standalone server on a Windows computer or server.
 
@@ -8,7 +8,7 @@ Here we will see how to install and set up a DayZ Standalone server on a Windows
   - with [Steam](https://store.steampowered.com/) installed
 - Steam account
 
-## Install Local DayZ Server
+## Installation
 The first step is downloading the server files. This can easily be done through Steam.
 
 1. Fire up Steam
@@ -25,7 +25,7 @@ The first step is downloading the server files. This can easily be done through 
 Don't launch the DayZ server yet!
 :::
 
-## Local DayZ Server Initialization
+## Initialization
 
 1. Open up your File Explorer
 2. Move to the Dayz Server directory
@@ -68,7 +68,7 @@ start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serv
 Don't worry if you don't have a `serverDZ.cfg` in your DayZ Server directory; we're going to create one in just a minute.
 :::
 
-## Local DayZ Server Configuration
+## Configuration
 The config file `serverDZ.cfg` sets all of the parameters that the server needs in order to know how to behave.
 
 Here is a possible (working!) example:
@@ -194,7 +194,7 @@ Also, very importantly, this is where you are eventually going to put
 the files that will allow you to be recognized as an admin; in other words, that's where your server
 will look in order to verify your claim to be an admin.
 
-## Run your Local DayZ Server
+## Start It
 
 Open a new terminal and run the `start.bat` script with:
 ```powershell
@@ -202,7 +202,7 @@ Open a new terminal and run the `start.bat` script with:
 ```
 If everything worked correctly you will get a little window with some logs.
 
-## Join your Local DayZ Server
+## Join It
 
 1. Fire up the DayZ launcher
 2. Go to `Servers`
@@ -210,7 +210,7 @@ If everything worked correctly you will get a little window with some logs.
 4. Click on `Join`
 5. Congrats! You are now playing on your own local DayZ server!
 
-## Stop your Local Dayz Server
+## Stop It
 
 Create a new file called `stop.bat`; it will look like this:
 ```batch
@@ -222,7 +222,7 @@ Then, just like before, open a new terminal and run the `stop.bat` script with:
 .\stop.bat
 ```
 
-## How to Reset / Wipe Your Local DayZ Server 
+## Reset / Wipe 
 1. Go to the missions folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\DayZServer\mpmissions` )
 2. Open the folder of the particular mission you are running (e.g. `dayzOffline.chernarusplus`)
 3. Open the `storage_1` folder
