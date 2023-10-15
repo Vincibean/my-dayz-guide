@@ -222,6 +222,24 @@ Then, just like before, open a new terminal and run the `stop.bat` script with:
 .\stop.bat
 ```
 
+## How to Reset / Wipe Your Local DayZ Server 
+1. Go to the missions folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\DayZServer\mpmissions` )
+2. Open the folder of the particular mission you are running (e.g. `dayzOffline.chernarusplus`)
+3. Open to the `storage_1` folder
+4. Delete its content
+
+::: tip
+An easier and quicker solution could be to leave your `DayZServer` folder vanilla, copy it with a different name (e.g. `DayZServerChernarus`), then when a
+reset / wipe is required you can just delete the custom folder and copy your `DayZServer1` folder again, assigning it the same name as before
+(e.g. `DayZServerChernarus`).
+:::
+
+### Return XMLs To Default Vanilla
+1. Go to Bohemia Interactive's ![DayZ Central Economy GitHub repository](https://github.com/BohemiaInteractive/DayZ-Central-Economy)
+2. Download the vanilla files (folders) for Chernarus and/or Livonia: `dayzOffline.chernarusplus` and/or `dayzOffline.enoch`
+3. Go to the missions folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\DayZServer\mpmissions` )
+4. Replace them missions folder with those you have downloaded from Bohemia Interactive
+
 ## Local DayZ Server or DayZ Community Offline Mode?
 [DayZ Community Offline Mode](https://github.com/Arkensor/DayZCommunityOfflineMode) is brilliant for quickly getting into the game so you can have a look around, spawn things in and generally explore, but if you want to have a genuine DayZ experience you need to run your
 own server locally. 
