@@ -27,12 +27,12 @@ disable3rdPerson=1;             // Toggles the 3rd person view for players (valu
 disableCrosshair=1;             // Toggles the cross-hair (value 0-1)
 
 disablePersonalLight = 1;       // Disables personal light for all clients connected to server
-lightingConfig = 0;             // 0 for brighter night setup, 1 for darker night setup
+lightingConfig = 1;             // 0 for brighter night setup, 1 for darker night setup
  
 serverTime="SystemTime";        // Initial in-game time of the server. "SystemTime" means the local time of the machine. Another possibility is to set the time to some value in "YYYY/MM/DD/HH/MM" format, f.e. "2015/4/8/17/23" .
 serverTimeAcceleration=6;       // Accelerated Time (value 0-24)// This is a time multiplier for in-game time. In this case, the time would move 24 times faster than normal, so an entire day would pass in one hour.
 serverNightTimeAcceleration=4;  // Accelerated Nigh Time - The numerical value being a multiplier (0.1-64) and also multiplied by serverTimeAcceleration value. Thus, in case it is set to 4 and serverTimeAcceleration is set to 2, night time would move 8 times faster than normal. An entire night would pass in 3 hours.
-serverTimePersistent=0;         // Persistent Time (value 0-1)// The actual server time is saved to storage, so when active, the next server start will use the saved time value.
+serverTimePersistent=1;         // Persistent Time (value 0-1)// The actual server time is saved to storage, so when active, the next server start will use the saved time value.
  
 guaranteedUpdates=1;            // Communication protocol used with game server (use only number 1)
  
@@ -70,10 +70,10 @@ logMemory = 1;					// Logs the server memory usage (value in seconds), needs to 
 logPlayers = 1;					// Logs the count of currently connected players (value in seconds), needs to have the ''-doLogs'' launch parameter active
 logFile = "server_console.log";	// Saves the server console log to a file in the folder with the other server logs
 
-adminLogPlayerHitsOnly = 0;		// 1 - log player hits only / 0 - log all hits ( animals/infected )
-adminLogPlacement = 0;			// 1 - log placement action ( traps, tents )
+adminLogPlayerHitsOnly = 1;		// 1 - log player hits only / 0 - log all hits ( animals/infected )
+adminLogPlacement = 1;			// 1 - log placement action ( traps, tents )
 adminLogBuildActions = 0;		// 1 - log basebuilding actions ( build, dismantle, destroy )
-adminLogPlayerList = 0;			// 1 - log periodic player list with position every 5 minutes
+adminLogPlayerList = 1;			// 1 - log periodic player list with position every 5 minutes
 
 disableMultiAccountMitigation = false;  // disables multi account mitigation on consoles when true (default: false)
 
@@ -102,7 +102,7 @@ defaultObjectViewDistance=1375;	        // highest object render distance on ser
 
 disableBaseDamage = 0;			// set to 1 to disable damage/destruction of fence and watchtower
 disableContainerDamage = 0;		// set to 1 to disable damage/destruction of tents, barrels, wooden crate and seachest
-//disableRespawnDialog = 0;             // set to 1 to disable the respawn dialog (new characters will be spawning as random)
+disableRespawnDialog = 0;             // set to 1 to disable the respawn dialog (new characters will be spawning as random)
 
 pingWarning = 200;              // set to define the ping value from which the initial yellow ping warning is triggered (value in milliseconds)
 pingCritical = 250;             // set to define the ping value from which the red ping warning is triggered (value in milliseconds)
