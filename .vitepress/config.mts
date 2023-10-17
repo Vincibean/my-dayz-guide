@@ -14,6 +14,9 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    outline: {
+      level: 'deep'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
