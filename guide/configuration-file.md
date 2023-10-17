@@ -14,7 +14,9 @@ password = "";                  // Password to connect to the server
 passwordAdmin = "";             // Password to become a server admin
 
 enableWhitelist = 0;            // Enable/disable whitelist (value 0-1)
- 
+disableBanlist = false;		// Disables the usage of ban.txt (default: false)
+disablePrioritylist = false;	// Disables usage of priority.txt (default: false
+
 maxPlayers = 60;                // Maximum amount of players
  
 verifySignatures = 2;           // Verifies .pbos against .bisign files. (only 2 is supported)
@@ -26,9 +28,6 @@ vonCodecQuality = 20;           // Voice over network codec quality, the higher 
 disable3rdPerson=1;             // Toggles the 3rd person view for players (value 0-1)
 disableCrosshair=1;             // Toggles the cross-hair (value 0-1)
 
-disablePersonalLight = 1;       // Disables personal light for all clients connected to server
-lightingConfig = 1;             // 0 for brighter night setup, 1 for darker night setup
- 
 serverTime="SystemTime";        // Initial in-game time of the server. "SystemTime" means the local time of the machine. Another possibility is to set the time to some value in "YYYY/MM/DD/HH/MM" format, f.e. "2015/4/8/17/23" .
 serverTimeAcceleration=6;       // Accelerated Time (value 0-24)// This is a time multiplier for in-game time. In this case, the time would move 24 times faster than normal, so an entire day would pass in one hour.
 serverNightTimeAcceleration=4;  // Accelerated Nigh Time - The numerical value being a multiplier (0.1-64) and also multiplied by serverTimeAcceleration value. Thus, in case it is set to 4 and serverTimeAcceleration is set to 2, night time would move 8 times faster than normal. An entire night would pass in 3 hours.
@@ -100,6 +99,9 @@ networkObjectBatchCompute = 1000;	// number of objects within a player's network
 defaultVisibility=1375;			// highest terrain render distance on server (if higher than "viewDistance=" in DayZ client profile, clientside parameter applies)
 defaultObjectViewDistance=1375;	        // highest object render distance on server (if higher than "preferredObjectViewDistance=" in DayZ client profile, clientside parameter applies)
 
+lightingConfig = 1;				// 0 for brighter night, 1 for darker night
+disablePersonalLight = 1;		// disables personal light for all clients connected to server
+
 disableBaseDamage = 0;			// set to 1 to disable damage/destruction of fence and watchtower
 disableContainerDamage = 0;		// set to 1 to disable damage/destruction of tents, barrels, wooden crate and seachest
 disableRespawnDialog = 0;             // set to 1 to disable the respawn dialog (new characters will be spawning as random)
@@ -128,6 +130,18 @@ Let's see what these settings do.
 - **Type**: `Numeric`
 - **Value**: `0-1`
 - **Description**: Enable/disable whitelist
+
+### disableBanlist
+- **Type**: `Boolean`
+- **Value**: `true/false`
+- **Default**: `false`
+- **Description**: Disables the usage of `ban.txt`
+
+### disablePrioritylist
+- **Type**: `Boolean`
+- **Value**: `true/false`
+- **Default**: `false`
+- **Description**: Disables usage of priority.txt
  
 ### maxPlayers
 - **Type**: `Numeric`
@@ -370,3 +384,8 @@ Let's see what these settings do.
 ### serverFpsWarning
 - **Type**: `Numeric`
 - **Description**: set to define the server fps value under which the initial server fps warning is triggered (minimum value is 11)
+
+---
+
+## Other useful links
+- [Server Configuration page on Bohemia Interactive's official Wiki](https://community.bistudio.com/wiki/DayZ:Server_Configuration)
