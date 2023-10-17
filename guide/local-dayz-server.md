@@ -65,8 +65,10 @@ start "DayZ Server" /min "DayZServer_x64.exe" -config=%serverConfig% -port=%serv
 ```
 
 ::: tip
-Don't worry if you don't have a `serverDZ.cfg` in your DayZ Server directory; we're going to create one in just a minute.
+See the [Launch Parameters](./launch-parameters) page for more info on the meaning of each parameter.
 :::
+
+Don't worry if you don't have a `serverDZ.cfg` in your DayZ Server directory; we're going to create one in just a minute.
 
 ## Configuration
 The config file `serverDZ.cfg` sets all of the parameters that the server needs in order to know how to behave.
