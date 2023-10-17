@@ -10,6 +10,7 @@ export default defineConfig({
   head: [
     ['link', { rel: "icon", type: "image/ico", href: base + "favicon.ico"}],
   ],
+  appearance: 'dark',
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
