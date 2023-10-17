@@ -82,22 +82,22 @@ will be loaded and used by the game.
 	{
 		"HologramData":
 		{
-			"disableIsCollidingBBoxCheck": false,
-			"disableIsCollidingPlayerCheck": false,
-			"disableIsClippingRoofCheck": false,
-			"disableIsBaseViableCheck": false,
-			"disableIsCollidingGPlotCheck": false,
-			"disableIsCollidingAngleCheck": false,
-			"disableIsPlacementPermittedCheck": false,
-			"disableHeightPlacementCheck": false,
-			"disableIsUnderwaterCheck": false,
-			"disableIsInTerrainCheck": false
+			"disableIsCollidingBBoxCheck": true,
+			"disableIsCollidingPlayerCheck": true,
+			"disableIsClippingRoofCheck": true,
+			"disableIsBaseViableCheck": true,
+			"disableIsCollidingGPlotCheck": true,
+			"disableIsCollidingAngleCheck": true,
+			"disableIsPlacementPermittedCheck": true,
+			"disableHeightPlacementCheck": true,
+			"disableIsUnderwaterCheck": true,
+			"disableIsInTerrainCheck": true
 		},
 		"ConstructionData":
 		{
-			"disablePerformRoofCheck": false,
-			"disableIsCollidingCheck": false,
-			"disableDistanceCheck": false
+			"disablePerformRoofCheck": true,
+			"disableIsCollidingCheck": true,
+			"disableDistanceCheck": true
 		}
 	},
 	"UIData":
