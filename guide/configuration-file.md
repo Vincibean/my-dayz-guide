@@ -237,7 +237,7 @@ Let's see what these settings do.
 
 ### respawnTime
 - **Type**: `Numeric`
-- **Description**: 1 - Enable Game Settings / 0 - Disable Game Settings. See [Gameplay Settings](/gameplay-settings)
+- **Description**: 1 - Enable Game Settings / 0 - Disable Game Settings. See [Gameplay Settings](./gameplay-settings)
 
 ### motd[]
 - **Type**: `Text Array`
