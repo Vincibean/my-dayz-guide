@@ -479,3 +479,7 @@ Result string looks like
 The value is not case sensitive, so it could be written in any case, or
 combination thereof.
 
+---
+
+## Other useful links
+- [Gameplay Settings page on Bohemia Interactive's official Wiki](https://community.bistudio.com/wiki/DayZ:Gameplay_Settings)

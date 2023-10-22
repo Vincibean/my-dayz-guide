@@ -113,3 +113,9 @@ basic stats of the item. If set, random value between the `min` and
 | `healthMax`   | `float` | The maximum health attribute value for the item.   |
 | `quantityMin` | `float` | The minimum quantity attribute value for the item. |
 | `quantityMax` | `float` | The maximum quantity attribute value for the item. |
+
+
+---
+
+## Other useful links
+- [Spawning Gear Configuration page on Bohemia Interactive's official Wiki](https://community.bistudio.com/wiki/DayZ:Spawning_Gear_Configuration)
