@@ -11,7 +11,7 @@ This can be used to prepare multiple character presets that will be used
 during the spawning process.
 
 ::: info
-Once activated in the [Gameplay Settings](./gameplay-settings"), the
+Once activated in the [Gameplay Settings](./gameplay-settings), the
 `cfgPlayerSpawnGear.json` file overrides the behavior of
 `StartingEquipSetup()` in mission init file. If the `CreateCharacter()` in
 the mission init file is overridden and someone uses their own
