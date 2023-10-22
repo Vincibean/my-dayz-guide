@@ -58,6 +58,7 @@ class Missions
 ///////////////////////////
 // Additional parameters //
 ///////////////////////////
+enableCfgGameplayFile = 1                       // 1 - Enable Game Settings / 0 - Disable Game Settings
 respawnTime = 5;				// Sets the respawn delay (in seconds) before the player is able to get a new character on the server, when the previous one is dead
 
 motd[] = { "[motd]line1","[motd]line2" };	// Message of the day displayed in the in-game chat
@@ -228,9 +229,15 @@ Let's see what these settings do.
 - **Value**: `0-1`
 - **Description**: Checks if the persistence files are corrupted and replaces corrupted ones with empty ones
 
+### enableCfgGameplayFile
+- **Type**: `Numeric`
+- **Value**: `0-1`
+- **Default**: `0`
+- **Description**: Sets the respawn delay (in seconds) before the player is able to get a new character on the server, when the previous one is dead
+
 ### respawnTime
 - **Type**: `Numeric`
-- **Description**: Sets the respawn delay (in seconds) before the player is able to get a new character on the server, when the previous one is dead
+- **Description**: 1 - Enable Game Settings / 0 - Disable Game Settings. See [Gameplay Settings](/gameplay-settings)
 
 ### motd[]
 - **Type**: `Text Array`
