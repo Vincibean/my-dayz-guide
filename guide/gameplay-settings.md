@@ -8,8 +8,8 @@ file.
 
 ## Initial Set-Up
 
-The gameplay settings are located in `cfggameplay.json`, before you can start
-using it, you need to copy [this file](https://github.com/BohemiaInteractive/DayZ-Central-Economy)
+The gameplay settings are located in your mission folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\DayZServer\mpmissions\dayzOffline.chernarusplus\cfggameplay.json`),
+before you can start using it, you need to copy [this file](https://github.com/BohemiaInteractive/DayZ-Central-Economy)
 to your mission folder.
 
 Once there, you can freely modify any of the values inside. To enable
