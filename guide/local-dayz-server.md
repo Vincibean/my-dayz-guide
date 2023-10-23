@@ -137,6 +137,42 @@ reset / wipe is required you can just delete the custom folder and copy your `Da
 3. Go to the missions folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\DayZServer\mpmissions` )
 4. Replace the missions folder with those you have downloaded from Bohemia Interactive
 
+## Mod installation
+
+- Open the [DayZ Workshop page](https://steamcommunity.com/app/221100/workshop/).
+- Select the mod you want to install and open its page
+- Click on the `Subscribe` button
+  - This will download the mod on your computer
+- Find the mod folder on your computer
+  - it should be placed in a folder like: `C:\Program Files (x86)\Steam\steamapps\common\DayZ\!Workshop`
+
+::: warning
+If you cannot find the `!Workshop` folder change your view settings to show hidden folders.
+:::
+
+- Copy the folder
+  - The folder is going to be named something like: `@` + the name of your mod; e.g. `@WindstridesClothingPack`
+- Go to your DayZ Server folder
+  - e.g.: `C:\Program Files (x86)\Steam\steamapps\common\DayZServer`
+- Paste the mod folder into your DayZ Server folder
+- Open your mod folder
+- Open the `Keys` folder
+- Copy the key
+  - The key will be a `.bikey` file; e.g. `Crazymike_winterchernarus.bikey`
+- Go back to your Local DayZ server folder
+- Open the `keys` folder
+- Paste the key
+- Go back to your Local DayZ server folder and edit your `start.bat` file
+  - in the line that starts with `start "DayZ Server"`, add a `-mod=<string>` parameter; use a semi-colon separated list of mods as argument
+
+::: tip
+In case some mods contain a space in their name, use `"`'s around the whole launch parameter block.
+
+E.g.: `"-mod=@Winter Chernarus"`
+:::
+
+- Start your server to see your mods in action!
+
 ## Local DayZ Server or DayZ Community Offline Mode?
 [DayZ Community Offline Mode](https://github.com/Arkensor/DayZCommunityOfflineMode) is brilliant for quickly getting into the game so you can have a look around, spawn things in and generally explore, but if you want to have a genuine DayZ experience you need to run your
 own server locally. 
