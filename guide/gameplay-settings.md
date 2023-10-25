@@ -451,12 +451,22 @@ Description: Internal parameter to keep track of the version of the file
 ### environmentMinTemps
 - **Type**: `float array`
 - **Default**: `[-3, -2, 0, 4, 9, 14, 18, 17, 12, 7, 4, 0]`
-- **Description**: List of minimal temperatures (12 values exactly)
+- **Description**: List of minimal temperatures, in degree Celsius 
+(12 values exactly, 1 per month)
 
 ### environmentMaxTemps
 - **Type**: `float array`
 - **Default**: `[3, 5, 7, 14, 19, 24, 26, 25, 21, 16, 10, 5]`
-- **Description**: List of maximal temperatures (12 values exactly)
+- **Description**: List of maximal temperatures, in degree Celsius
+(12 values exactly, 1 per month)
+
+::: tip
+Why 12 values exactly? Because that's the number of months in a year.
+
+In other words, in the examples above, we are saying that January's 
+min temperature is -3 and its max temperature is 3; February's min
+temperature is -2 and its max temperature is 5; etc...
+:::
 
 ## ARGB Format
 
