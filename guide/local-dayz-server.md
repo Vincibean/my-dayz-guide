@@ -131,7 +131,7 @@ reset / wipe is required you can just delete the custom folder and copy your `Da
 (e.g. `DayZServerChernarus`).
 :::
 
-### Return XMLs To Default Vanilla
+### Return XMLs To Vanilla
 1. Go to Bohemia Interactive's [DayZ Central Economy GitHub repository](https://github.com/BohemiaInteractive/DayZ-Central-Economy)
 2. Download the vanilla files (folders) for Chernarus and/or Livonia: `dayzOffline.chernarusplus` and/or `dayzOffline.enoch`
 3. Go to the missions folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\DayZServer\mpmissions` )
