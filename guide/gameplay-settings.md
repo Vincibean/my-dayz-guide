@@ -479,6 +479,23 @@ Result string looks like
 The value is not case sensitive, so it could be written in any case, or
 combination thereof.
 
+## How To's
+
+### Have (Almost) Infinite Stamina
+
+You can address this in several different ways. All of them give you
+almost limitless stamina, but not actual infinite stamina: the stamina
+will still drain, just very slowly.
+Unsurprisingly, all of these approaches involve the [Stamina parameters](#stamina-parameters).
+- One way is to set the "stamina depletion" parameters to a very small number.
+For instance, you can set [`sprintStaminaModifierErc`](#sprintstaminamodifiererc)
+and [`sprintStaminaModifierCro`](#sprintstaminamodifiercro) from `1.0` to `0.01`.
+In this way the amount of stamina will last longer when you're sprinting, but it
+will still disappear pretty fast when you're jumping or punching.
+- Another way is to change the maximum amount of stamina ([`staminaMax`](#staminamax))
+from `100.0` to `10000.0`. This will make the whole stamina pool larger.
+- Of course, you can also combine the two approaches above.
+
 ---
 
 ## Other useful links
