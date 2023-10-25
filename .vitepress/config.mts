@@ -2,10 +2,9 @@ import { defineConfig } from 'vitepress'
 
 const base = "/my-dayz-guide/"
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My DayZ Guide",
-  description: "My notes on how to set up, maintain and mod a DayZ server",
+  title: "DayZ Guide",
+  description: "Notes on how to set up, maintain and mod a DayZ server",
   base,
   head: [
     ['link', { rel: "icon", type: "image/ico", href: base + "favicon.ico"}],
@@ -13,21 +12,19 @@ export default defineConfig({
   appearance: 'dark',
   lastUpdated: true,
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     outline: {
       level: 'deep'
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Local DayZ Server', link: '/local-dayz-server' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Server Maintenance',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Local DayZ Server', link: '/guide/local-dayz-server' },
         ]
       }
     ],
