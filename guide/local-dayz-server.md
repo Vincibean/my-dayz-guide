@@ -131,6 +131,32 @@ reset / wipe is required you can just delete the custom folder and copy your `Da
 (e.g. `DayZServerChernarus`).
 :::
 
+### Soft Wipe
+
+A "soft wipe" will wipe all the loot, all the buildings (bases), and all the cars; players will only be left with what they have in their inventory.
+
+This can be useful when changes are made to the map: a soft wipe will prevent loot, bases or cars from hanging around in the air where (say) a building used to be in a previous version of the map.
+
+For instance, this proved useful with update 1.23, which brought several changes to the NorthWest Airfield.
+
+1. Go to the missions folder (e.g. `C:\Program Files (x86)\Steam\steamapps\common\DayZServer\mpmissions`)
+2. Open the folder of the particular mission you are running (e.g. `dayzOffline.chernarusplus`)
+3. Open the `db` folder
+4. Open the `economy.xml` file
+5. Find the lines that start with `<dynamic>` and `<vehicles>`
+
+:::info
+`<dynamic>` controls the loot and the buildings on your server.
+
+`<vehicles>` of course controls the vehicles on your server.
+:::
+
+6. Change their `load` parameter from `1` to `0`; this means that the loot (and vehicles) won't be loaded
+7. Restart your server and wait a few minues; none of the loot will spawn in 
+8. After a few minutes the server will save its state and none of the loot will be there. Stop the server
+9. Change the `load` parameters of `<dynamic>` and `<vehicles>` back to `1`
+10. Restart the server
+
 ### Return XMLs To Vanilla
 1. Go to Bohemia Interactive's [DayZ Central Economy GitHub repository](https://github.com/BohemiaInteractive/DayZ-Central-Economy)
 2. Download the vanilla files (folders) for Chernarus and/or Livonia: `dayzOffline.chernarusplus` and/or `dayzOffline.enoch`
