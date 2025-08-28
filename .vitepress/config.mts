@@ -35,7 +35,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Vincibean/my-dayz-guide' },
-      { icon: 'youtube', link: 'https://www.youtube.com/@Ledoryan' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@Lethorean' },
       { icon: 'twitter', link: 'https://twitter.com/sepensai' },
     ]
   }
