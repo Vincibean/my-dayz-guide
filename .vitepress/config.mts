@@ -17,7 +17,7 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Local DayZ Server', link: '/local-dayz-server' }
+      { text: 'Local DayZ Server', link: '/guide/local-dayz-server' }
     ],
 
     sidebar: [
