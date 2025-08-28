@@ -4,9 +4,9 @@ Here we will see how to install and set up a DayZ Standalone server on a Windows
 
 
 ## Prerequisites
-- Windows computer/server
-  - with [Steam](https://store.steampowered.com/) installed
-- Steam account
+- A Microsoft Windows computer/server
+- [Steam](https://store.steampowered.com/)
+- [DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 
 ## Installation
 The first step is downloading the server files. This can easily be done through Steam.
@@ -36,10 +36,6 @@ The DayZ Server directory should be something along the lines of:
 `C:\Program Files (x86)\Steam\steamapps\common\DayZServer`.
 
 In the remainder of this guide we will assume that this is where your DayZ Server directory is.
-:::
-
-::: info
-This is what you would see is if you were looking at the file structure on a remote server; 
 :::
 
 3. Create a new text file; call it `start.bat`
@@ -87,9 +83,8 @@ Ideally, this should be the following folder:
 When the server starts up it's going to create a folder (whose name depends on what you set as argument to
 the `-profiles` parameter) and within that folder it's going to put your log files.
 
-Also, very importantly, this is where you are eventually going to put
-the files that will allow you to be recognized as an admin; in other words, that's where your server
-will look in order to verify your claim to be an admin.
+This is also where you are eventually going to put the files that will allow you to be recognized as an admin; 
+in other words, that's where your server will look in order to verify your claim to be an admin.
 
 ## Start It
 
@@ -152,7 +147,7 @@ For instance, this proved useful with update 1.23, which brought several changes
 :::
 
 6. Change their `load` parameter from `1` to `0`; this means that the loot (and vehicles) won't be loaded
-7. Restart your server and wait a few minues; none of the loot will spawn in 
+7. Restart your server and wait a few minutes; none of the loot will spawn in 
 8. After a few minutes the server will save its state and none of the loot will be there. Stop the server
 9. Change the `load` parameters of `<dynamic>` and `<vehicles>` back to `1`
 10. Restart the server
