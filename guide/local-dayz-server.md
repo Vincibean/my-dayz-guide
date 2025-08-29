@@ -15,7 +15,7 @@ The first step is downloading the server files. This can easily be done through 
 2. Go to your `Library`
 3. At the top where it says `Games` change that to include `Tools`
 
-![Steam Library includes Tools](../img/steam-library-tools.jpg)
+![Steam Library includes Tools](/img/steam-library-tools.jpg)
 
 4. You'll see `DayZ Server` among the results. Select it
 5. Click `Install`
