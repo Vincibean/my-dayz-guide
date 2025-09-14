@@ -202,5 +202,4 @@ own server locally.
 
 ## Other useful links
 - [Installing and setting up a DayZ Standalone server on Windows server (2016 Guide)](https://write.corbpie.com/installing-and-setting-up-a-dayz-standalone-server-on-windows-server-2016-guide/)
-- [Installing and setting up a DayZ Standalone server on Windows server (Updated Guide)](https://write.corbpie.com/dayz-server-setup-and-install-on-windows-server-2019-with-steamcmd/)
 - [The DayZ Server Owner HowTo and FAQ](https://www.reddit.com/r/dayz/comments/9hamlp/the_dayz_server_owner_howto_and_faq/)

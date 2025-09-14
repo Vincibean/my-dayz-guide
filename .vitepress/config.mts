@@ -25,6 +25,7 @@ export default defineConfig({
         text: 'Server Maintenance',
         items: [
           { text: 'Local DayZ Server (Steam Client)', link: '/guide/local-dayz-server-steam-client' },
+          { text: 'Local DayZ Server (SteamCMD)', link: '/guide/local-dayz-server-steamcmd' },
         ]
       }
     ],
