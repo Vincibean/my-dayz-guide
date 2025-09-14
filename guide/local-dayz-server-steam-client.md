@@ -1,6 +1,6 @@
-# Local DayZ Server
+# Local DayZ Server (using the Steam Client)
 
-Here we will see how to install and set up a DayZ Standalone server on a Windows computer or server.
+Here we will see how to install and set up a DayZ Standalone server on a Windows computer or server using the [Steam Client](https://store.steampowered.com/).
 
 
 ## Prerequisites
@@ -28,7 +28,7 @@ Don't launch the DayZ server yet!
 ## Initialization
 
 1. Open up your File Explorer
-2. Move to the Dayz Server directory
+2. Move to the DayZ Server directory
 
 ::: info
 The DayZ Server directory should be something along the lines of:

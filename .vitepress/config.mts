@@ -17,14 +17,14 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Local DayZ Server', link: '/guide/local-dayz-server' }
+      { text: 'Local DayZ Server (Steam Client)', link: '/guide/local-dayz-server-steam-client' }
     ],
 
     sidebar: [
       {
         text: 'Server Maintenance',
         items: [
-          { text: 'Local DayZ Server', link: '/guide/local-dayz-server' },
+          { text: 'Local DayZ Server (Steam Client)', link: '/guide/local-dayz-server-steam-client' },
         ]
       }
     ],

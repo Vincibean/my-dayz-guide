@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: DayZ Guide
-      link: /guide/local-dayz-server
+      link: /guide/local-dayz-server-steam-client
 
 ---
 
